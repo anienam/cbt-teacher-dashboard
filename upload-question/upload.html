@@ -166,210 +166,232 @@
           </div>
         </header>
 
-        <!-- =========================
+        <div class="main-container">
+          <!-- =========================
      EXAM DETAILS
 ========================= -->
 
-        <section class="exam-details">
-          <h2>Exam Details</h2>
+          <section class="exam-details">
+            <h2>Exam Details</h2>
 
-          <form id="examDetailsForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="classSelect">Class</label>
+            <form id="examDetailsForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="classSelect">Class</label>
 
-                <select id="classSelect">
-                  <option value="">Select Class</option>
-                </select>
+                  <select id="classSelect">
+                    <option value="">Select Class</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="subjectSelect">Subject</label>
+
+                  <select id="subjectSelect">
+                    <option value="">Select Subject</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="termSelect">Term</label>
+
+                  <select id="termSelect">
+                    <option value="">Select Term</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="sessionInput"> Session / Academic Year </label>
+
+                  <input
+                    id="sessionInput"
+                    type="text"
+                    placeholder="2025/2026"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="durationInput"> Duration (Minutes) </label>
+
+                  <input id="durationInput" type="number" placeholder="45" />
+                </div>
+
+                <div class="form-group">
+                  <label for="totalQuestionsInput"> Total Questions </label>
+
+                  <input
+                    id="totalQuestionsInput"
+                    type="number"
+                    placeholder="40"
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="instructionInput"> Instructions </label>
+
+                  <textarea
+                    id="instructionInput"
+                    placeholder="e.g Answer all questions"
+                  ></textarea>
+                </div>
               </div>
+            </form>
+          </section>
 
-              <div class="form-group">
-                <label for="subjectSelect">Subject</label>
-
-                <select id="subjectSelect">
-                  <option value="">Select Subject</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="termSelect">Term</label>
-
-                <select id="termSelect">
-                  <option value="">Select Term</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="sessionInput"> Session / Academic Year </label>
-
-                <input id="sessionInput" type="text" placeholder="2025/2026" />
-              </div>
-
-              <div class="form-group">
-                <label for="durationInput"> Duration (Minutes) </label>
-
-                <input id="durationInput" type="number" placeholder="45" />
-              </div>
-
-              <div class="form-group">
-                <label for="totalQuestionsInput"> Total Questions </label>
-
-                <input
-                  id="totalQuestionsInput"
-                  type="number"
-                  placeholder="40"
-                />
-              </div>
-
-              <div class="form-group full-width">
-                <label for="instructionInput"> Instructions </label>
-
-                <textarea
-                  id="instructionInput"
-                  placeholder="e.g Answer all questions"
-                ></textarea>
-              </div>
-            </div>
-          </form>
-        </section>
-
-        <!-- ==========================================
+          <!-- ==========================================
      QUESTION BUILDER
 ========================================== -->
 
-        <section class="question-builder">
-          <div class="builder-header">
-            <div>
-              <span class="question-counter" id="questionCounter">
-                Question 1 of 40
-              </span>
+          <section class="question-builder">
+            <div class="builder-header">
+              <div>
+                <span class="question-counter" id="questionCounter">
+                  Question 1 of 40
+                </span>
 
-              <div class="progress-wrapper">
-                <div class="progress-track">
-                  <div class="progress-fill" id="progressFill"></div>
+                <div class="progress-wrapper">
+                  <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                  </div>
+
+                  <p class="progress-text" id="progressText">
+                    0 / 40 Questions Completed (0%)
+                  </p>
                 </div>
-
-                <p class="progress-text" id="progressText">
-                  0 / 40 Questions Completed (0%)
-                </p>
               </div>
             </div>
-          </div>
 
-          <div id="questionContainer">
-            <!-- Question Text -->
+            <div id="questionContainer">
+              <!-- Question Text -->
 
-            <div class="question-field">
-              <label for="questionText"> Question Text </label>
+              <div class="question-field">
+                <label for="questionText"> Question Text </label>
 
-              <textarea
-                id="questionText"
-                placeholder="Type the exam question here..."
-              ></textarea>
+                <textarea
+                  id="questionText"
+                  placeholder="Type the exam question here..."
+                ></textarea>
+              </div>
+
+              <!-- Options -->
+
+              <div class="options-grid">
+                <!-- OPTION A -->
+
+                <div class="option-card">
+                  <div class="option-header">
+                    <h3>Option A</h3>
+
+                    <button
+                      type="button"
+                      class="correct-btn active"
+                      data-option="A"
+                    >
+                      ✓ Correct Answer
+                    </button>
+                  </div>
+
+                  <input
+                    type="text"
+                    id="optionA"
+                    placeholder="Enter option A"
+                  />
+                </div>
+
+                <!-- OPTION B -->
+
+                <div class="option-card">
+                  <div class="option-header">
+                    <h3>Option B</h3>
+
+                    <button type="button" class="correct-btn" data-option="B">
+                      Mark as Correct
+                    </button>
+                  </div>
+
+                  <input
+                    type="text"
+                    id="optionB"
+                    placeholder="Enter option B"
+                  />
+                </div>
+
+                <!-- OPTION C -->
+
+                <div class="option-card">
+                  <div class="option-header">
+                    <h3>Option C</h3>
+
+                    <button type="button" class="correct-btn" data-option="C">
+                      Mark as Correct
+                    </button>
+                  </div>
+
+                  <input
+                    type="text"
+                    id="optionC"
+                    placeholder="Enter option C"
+                  />
+                </div>
+
+                <!-- OPTION D -->
+
+                <div class="option-card">
+                  <div class="option-header">
+                    <h3>Option D</h3>
+
+                    <button type="button" class="correct-btn" data-option="D">
+                      Mark as Correct
+                    </button>
+                  </div>
+
+                  <input
+                    type="text"
+                    id="optionD"
+                    placeholder="Enter option D"
+                  />
+                </div>
+              </div>
             </div>
+          </section>
 
-            <!-- Options -->
-
-            <div class="options-grid">
-              <!-- OPTION A -->
-
-              <div class="option-card">
-                <div class="option-header">
-                  <h3>Option A</h3>
-
-                  <button
-                    type="button"
-                    class="correct-btn active"
-                    data-option="A"
-                  >
-                    ✓ Correct Answer
-                  </button>
-                </div>
-
-                <input type="text" id="optionA" placeholder="Enter option A" />
-              </div>
-
-              <!-- OPTION B -->
-
-              <div class="option-card">
-                <div class="option-header">
-                  <h3>Option B</h3>
-
-                  <button type="button" class="correct-btn" data-option="B">
-                    Mark as Correct
-                  </button>
-                </div>
-
-                <input type="text" id="optionB" placeholder="Enter option B" />
-              </div>
-
-              <!-- OPTION C -->
-
-              <div class="option-card">
-                <div class="option-header">
-                  <h3>Option C</h3>
-
-                  <button type="button" class="correct-btn" data-option="C">
-                    Mark as Correct
-                  </button>
-                </div>
-
-                <input type="text" id="optionC" placeholder="Enter option C" />
-              </div>
-
-              <!-- OPTION D -->
-
-              <div class="option-card">
-                <div class="option-header">
-                  <h3>Option D</h3>
-
-                  <button type="button" class="correct-btn" data-option="D">
-                    Mark as Correct
-                  </button>
-                </div>
-
-                <input type="text" id="optionD" placeholder="Enter option D" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ==========================================
+          <!-- ==========================================
      ACTION BUTTONS
 ========================================== -->
 
-        <section class="builder-actions">
-          <button class="btn-primary" id="saveNextBtn">
-            Save & Add Next Question
-            <i data-lucide="arrow-right"></i>
-          </button>
+          <section class="builder-actions">
+            <button class="btn-primary" id="saveNextBtn">
+              Save & Add Next Question
+              <i data-lucide="arrow-right"></i>
+            </button>
 
-          <button class="btn-outline" id="clearBtn">Clear Form</button>
-        </section>
+            <button class="btn-outline" id="clearBtn">Clear Form</button>
+          </section>
 
-        <!-- ==========================================
+          <!-- ==========================================
      SUBMISSION BAR
 ========================================== -->
 
-        <section class="submission-bar">
-          <div>
-            <strong id="progressSummary"> 0 Questions Added </strong>
+          <section class="submission-bar">
+            <div>
+              <strong id="progressSummary"> 0 Questions Added </strong>
 
-            <p>
-              Questions will be reviewed by the school administrator before
-              becoming available to students.
-            </p>
-          </div>
+              <p>
+                Questions will be reviewed by the school administrator before
+                becoming available to students.
+              </p>
+            </div>
 
-          <button class="btn-primary" id="submitExamBtn">
-            Submit for Approval
-          </button>
-        </section>
+            <button class="btn-primary" id="submitExamBtn">
+              Submit for Approval
+            </button>
+          </section>
 
-        <p class="footer-note">
-          Note: Submitted questions will be reviewed by the school administrator
-          before they become available to students.
-        </p>
+          <p class="footer-note">
+            Note: Submitted questions will be reviewed by the school
+            administrator before they become available to students.
+          </p>
+        </div>
 
         <!-- ==========================================
      CONFIRM SUBMISSION MODAL

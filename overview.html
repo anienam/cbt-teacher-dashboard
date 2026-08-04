@@ -145,32 +145,6 @@
     ========================== -->
 
       <main class="main-content">
-        <!-- Top Header -->
-
-        <!-- <header class="topbar">
-          <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
-            <i data-lucide="menu"></i>
-          </button>
-          <div>
-            <h1>Teacher Dashboard</h1>
-
-            <p>
-              Overview of your classes, students and exam activities at a
-              glance.
-            </p>
-          </div>
-
-          <div class="teacher-profile">
-            <img src="assets/teacher.jpg" alt="Teacher" />
-
-            <div>
-              <h3>Mrs. Adebayo Folake</h3>
-
-              <p>Biology Teacher</p>
-            </div>
-          </div>
-        </header> -->
-
         <header class="topbar">
           <div class="topbar-left">
             <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
@@ -187,20 +161,6 @@
           </div>
 
           <div class="topbar-right">
-            <!-- Optional future actions -->
-            <!--
-        <div class="topbar-actions">
-            <button class="icon-btn">
-                <i data-lucide="bell"></i>
-                <span class="dot"></span>
-            </button>
-
-            <button class="icon-btn">
-                <i data-lucide="search"></i>
-            </button>
-        </div>
-        -->
-
             <div class="teacher-profile">
               <img src="assets/image.png" alt="Teacher" />
 
@@ -212,116 +172,118 @@
           </div>
         </header>
 
-        <!-- =========================
+        <div class="main-container">
+          <!-- =========================
               STATS
         ========================== -->
 
-        <section class="stats-grid">
-          <!-- <article class="stat-card">
+          <section class="stats-grid">
+            <!-- <article class="stat-card">
             <h2>191</h2>
 
             <p>Total Students</p>
           </article> -->
 
-          <article class="stat-card success">
-            <div class="stat-icon">
-              <i data-lucide="users"></i>
-            </div>
+            <article class="stat-card success">
+              <div class="stat-icon">
+                <i data-lucide="users"></i>
+              </div>
 
-            <h2 id="studentCount">191</h2>
+              <h2 id="studentCount">191</h2>
 
-            <p>Total Students</p>
-          </article>
+              <p>Total Students</p>
+            </article>
 
-          <!-- <article class="stat-card">
+            <!-- <article class="stat-card">
             <h2>6</h2>
 
             <p>Classes Assigned</p>
           </article> -->
 
-          <article class="stat-card success">
-            <div class="stat-icon">
-              <i data-lucide="school"></i>
-            </div>
+            <article class="stat-card success">
+              <div class="stat-icon">
+                <i data-lucide="school"></i>
+              </div>
 
-            <h2 id="classCount">3</h2>
+              <h2 id="classCount">3</h2>
 
-            <p>Classes Assigned</p>
-          </article>
+              <p>Classes Assigned</p>
+            </article>
 
-          <!-- <article class="stat-card">
+            <!-- <article class="stat-card">
             <h2>2</h2>
 
             <p>Subjects Taught</p>
           </article> -->
 
-          <article class="stat-card info">
-            <div class="stat-icon">
-              <i data-lucide="book-open"></i>
-            </div>
+            <article class="stat-card info">
+              <div class="stat-icon">
+                <i data-lucide="book-open"></i>
+              </div>
 
-            <h2 id="subjectCount">3</h2>
+              <h2 id="subjectCount">3</h2>
 
-            <p>Subjects Taught</p>
-          </article>
+              <p>Subjects Taught</p>
+            </article>
 
-          <!-- <article class="stat-card warning">
+            <!-- <article class="stat-card warning">
             <h2>3</h2>
 
             <p>Pending Approvals</p>
           </article> -->
 
-          <article class="stat-card warning">
-            <div class="stat-icon">
-              <i data-lucide="clock"></i>
-            </div>
+            <article class="stat-card warning">
+              <div class="stat-icon">
+                <i data-lucide="clock"></i>
+              </div>
 
-            <h2 id="pendingCount">3</h2>
+              <h2 id="pendingCount">3</h2>
 
-            <p>Pending Approvals</p>
-          </article>
-        </section>
+              <p>Pending Approvals</p>
+            </article>
+          </section>
 
-        <!-- =========================
+          <!-- =========================
               TABLE
         ========================== -->
 
-        <section class="table-section">
-          <div class="section-header">
-            <h2>My Classes</h2>
-          </div>
+          <section class="table-section">
+            <div class="section-header">
+              <h2>My Classes</h2>
+            </div>
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Class</th>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Class</th>
 
-                  <th>Subject</th>
+                    <th>Subject</th>
 
-                  <th>No. of Students</th>
+                    <th>No. of Students</th>
 
-                  <th>Term</th>
+                    <th>Term</th>
 
-                  <th>Session</th>
+                    <th>Session</th>
 
-                  <th>Action</th>
+                    <th>Action</th>
 
-                  <!-- <td>
+                    <!-- <td>
                     <button class="table-action">
                       <i data-lucide="eye"></i>
                       View
                     </button>
                   </td> -->
-                </tr>
-              </thead>
+                  </tr>
+                </thead>
 
-              <tbody id="classesTable">
-                <!-- Filled by JavaScript -->
-              </tbody>
-            </table>
-          </div>
-        </section>
+                <tbody id="classesTable">
+                  <!-- Filled by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 

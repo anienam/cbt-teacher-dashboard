@@ -992,3 +992,10 @@ MODAL
 
   font-weight: bold;
 }
+
+/* container */
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 32px 40px;
+}
